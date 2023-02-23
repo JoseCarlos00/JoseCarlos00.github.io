@@ -5,24 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        pre {
+            background-color: black;
+            padding: 10px;
+            font-weight: 200;
+            white-space: pre;
+            border-radius: .5rem;
+            margin: 1rem 0;
+            font-size: 14px;
+        } 
+        pre code {
+            background-color: #182a56;
+
+            padding: 16px;
+            display: block;
+            margin: 16px 0;
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+
+            color: #b9cde3;
+        }
+        .code-en-texto {
+            background-color: #000000;
+            padding: 1px;
+        }
+        .string {
+            color: yellow;
+        }
+        .tag {
+            color: #286bcc;
+        }
+        .mayor-menor {
+            color: gray;
+        }
+        .txt {
+            color: white;
+        }
+
+        main {
+            display: grid;
+            place-items: center;
+        }
+
+        section {
+            margin-top: 60px;
+            width: 800px;
+        }
+    </style>
 </head>
 <body>
-    <p>Hola mundo</p>
-    <pre><code>
-    Como subir un proyecto local a github.
-    desde la terminal del equipo donde esta el proyecto que queremos subir a github
-    Nos vamos a la carpeta del proyecto y ejecutamos estos comandos.
+    <main>
+        <section>
+            <H1>Como subir un proyecto local a github.</H1>
+            <P>
+                 Creamos un nuevo repositorio en https://github.com. Le damos nombre, descripción, seleccionamos si va a ser un proyecto publico o privado si es el caso, y dejamos el check de crear README sin marcar. Le damos a crear repositorio y con esto ya tenemos el   repositorio donde alojaremos nuestro proyecto.
+            </P>
+            <pre><code>
+                Desde la terminal del equipo donde esta el proyecto que queremos subir a github
+                Nos vamos a la carpeta del proyecto y ejecutamos estos comandos.
 
-    git init
+                git init
 
-    git add .
+                git add .
 
-    git commit -m "first commit"
+                git commit -m "first commit"
 
-    git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
+                git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
 
-    git push -u origin master
-    </code></pre>
+                git push -u origin master
+            </code></pre>
+        </section>
+    </main>
 
 </body>
 </html>
